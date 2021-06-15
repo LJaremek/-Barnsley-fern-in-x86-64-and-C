@@ -1,0 +1,25 @@
+CC=gcc
+CFLAGS=-m64 -Wall
+LDFLAGS=-L/usr/lib -lallegro -lallegro_image -lallegro_primitives
+INCLUDE=-I. -I/usr/include/allegro5
+
+
+all:	main.o f.o
+	$(CC) $(CFLAGS) main.o f.o -o fun -no-pie $(INCLUDE) $(LDFLAGS)
+	
+
+main.o:	main.c
+	$(CC) $(CFLAGS) -c main.c -o main.o
+	
+
+f.o:	f.s
+	nasm -f elf64 -g f.s -o f.o
+	
+gdb:
+	gdb fun
+
+clean:
+	rm -f *.o
+
+debug:	all gdb
+
