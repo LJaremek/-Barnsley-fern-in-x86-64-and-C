@@ -6,9 +6,12 @@ Drawing Barnsley fern in Intel x86-64 and C
  * f.h - header file of main.c
  * main.c - a file with a program that gets data from the user, calls the assembly function and displays the fern
  * makefile - compiles files and makes executable fun
+ * fun - executable file with all program
 
-## Results for 10.000.000, 1.000.000, 100.000, 10.000 steps with 1, 8, 15 probability:
-![fern1_10mln](https://user-images.githubusercontent.com/67274837/122090939-96ccda80-ce08-11eb-8445-c4b22abc8204.jpg)
-![fern2_1mln](https://user-images.githubusercontent.com/67274837/122090924-95031700-ce08-11eb-8c17-c0a6f16b0711.jpg)
-![fern3_100k](https://user-images.githubusercontent.com/67274837/122090931-959bad80-ce08-11eb-8e7e-8b6fed582629.jpg)
-![fern4_10k](https://user-images.githubusercontent.com/67274837/122090937-96344400-ce08-11eb-866f-7810ceb25081.jpg)
+## How to use it:
+![example](https://user-images.githubusercontent.com/67274837/122121036-72cec080-ce2b-11eb-9a6b-ebf8b67376ee.jpg)
+
+
+## Results with 1, 8, 15 probability:
+![ferns](https://user-images.githubusercontent.com/67274837/122121116-88dc8100-ce2b-11eb-90db-b14287e60507.gif)
+
